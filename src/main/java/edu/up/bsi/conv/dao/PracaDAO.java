@@ -1,12 +1,9 @@
 package edu.up.bsi.conv.dao;
 
-import java.util.List;
-
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import edu.up.bsi.conv.entidade.Categoria;
 import edu.up.bsi.conv.entidade.PracaAuxiliar;
 import edu.up.bsi.conv.entidade.PracaPrincipal;
 
