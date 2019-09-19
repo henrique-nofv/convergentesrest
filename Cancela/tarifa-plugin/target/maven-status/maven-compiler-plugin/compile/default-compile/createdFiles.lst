@@ -1,0 +1,4 @@
+br\edu\up\conv\cancela\tarifa\impl\Mensagem.class
+br\edu\up\conv\cancela\tarifa\impl\TarifaCategoria.class
+br\edu\up\conv\cancela\tarifa\impl\TarifaLocal.class
+br\edu\up\conv\cancela\tarifa\Tarifa.class

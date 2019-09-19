@@ -37,5 +37,4 @@ http://localhost:8080/jwt/rest/categorias/cadastrar?veiculo=Caminhão com reboque
 
 http://localhost:8080/jwt/rest/categorias/cadastrar?veiculo=Caminhão com reboque e caminhão trator com semi-reboque&eixos=6&rodagem=Dupla&tarifa=6&praca=2&valores=46.80&idCategoria=8
 
-http://localhost:8080/jwt/rest/categorias/cadastrar?veiculo=Motocicletas, motonetas e bicicletas
-motorizadas&eixos=2&rodagem=Simples&tarifa=0.5&praca=2&valores=3.90&idCategoria=9
+http://localhost:8080/jwt/rest/categorias/cadastrar?veiculo=Motocicletas, motonetas e bicicletas motorizadas&eixos=2&rodagem=Simples&tarifa=0.5&praca=2&valores=3.90&idCategoria=9
