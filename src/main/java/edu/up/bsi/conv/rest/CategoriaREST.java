@@ -12,6 +12,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
+import br.edu.up.conv.cancela.leitor.xml.tickets.Ticket;
 import edu.up.bsi.conv.dao.PracaDAO;
 import edu.up.bsi.conv.entidade.PracaAuxiliar;
 import edu.up.bsi.conv.entidade.PracaPrincipal;
@@ -66,6 +67,30 @@ public class CategoriaREST {
 		} else {
 			return Response.status(400).entity("Praça inválida!").build();
 		}
+	}
+
+	@POST
+	@Path(value = "salvarBilhete")
+	@Consumes(MediaType.WILDCARD)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response gravarTarifa(@QueryParam(value = "praca") String praca,
+								 @QueryParam(value = "cancela") String cancela,
+								 @QueryParam(value = "datahora") String dataHora,
+								 @QueryParam(value = "tarifa") String tarifa,
+								 @QueryParam(value = "categoria") String categoria) {
+
+		Ticket b = new Ticket();
+		
+		b.setPraca(praca);
+		b.setCancela(cancela);;
+		b.setDataHora(dataHora);
+		b.setTarifa(tarifa);
+		b.setCategoria(categoria);
+		
+		dao.salvarBilhete(b);
+
+		return Response.status(201).entity("Bilhete cadastrado!").build();
+
 	}
 
 	@POST

@@ -5,6 +5,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
+import br.edu.up.conv.cancela.leitor.xml.tickets.Ticket;
 import edu.up.bsi.conv.entidade.PracaAuxiliar;
 import edu.up.bsi.conv.entidade.PracaPrincipal;
 
@@ -54,6 +55,12 @@ public class PracaDAO {
 		} catch (Exception e) {
 			return -1.0;
 		}
+	}
+
+	public Ticket salvarBilhete(Ticket b) {
+		// TODO Auto-generated method stub
+		entityManager.persist(b);
+		return b;
 	}
 	
 }
